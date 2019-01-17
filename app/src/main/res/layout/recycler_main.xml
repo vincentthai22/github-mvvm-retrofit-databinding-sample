@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:bind="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable name="user" type="com.example.vince.retrofitmvvm.models.User"/>
+        <variable name="viewModel" type="com.example.vince.retrofitmvvm.viewmodels.MainViewModel"/>
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/githubInfoTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="@{user.username}"
+            tools:text="yolo" />
+
+    </android.support.constraint.ConstraintLayout>
+</layout>
